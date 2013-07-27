@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Play" >
+
+    <TextView
+        android:id="@+id/chances"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:textSize="@dimen/data_size"
+        android:text="@string/chances"
+        android:textColor="@color/black"
+         />
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chances"
+        android:layout_below="@+id/chances"
+        android:layout_marginTop="70dp"
+        android:background="@color/transparent"
+        android:ems="10"
+        android:text="@string/empty"
+        android:textColor="@color/black"
+        android:textSize="@dimen/data_size" />
+
+      <EditText
+          android:id="@+id/letter_guessed"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/msg"
+          android:layout_below="@+id/msg"
+          android:layout_marginTop="24dp"
+          android:ems="10"
+          android:hint="@string/letter_guessed"
+          android:textColor="@color/black"
+          android:textColorHint="@color/black"
+          android:textSize="@dimen/data_size" >
+
+          <requestFocus />
+      </EditText>
+
+      <TextView
+          android:id="@+id/status"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/letter_guessed"
+          android:layout_below="@+id/go"
+          android:layout_marginTop="35dp"
+          android:background="@color/transparent"
+          android:text="@string/status"
+          android:textColor="@color/black"
+          android:textSize="@dimen/data_size"
+          android:textStyle="bold" />
+
+      <Button
+          android:id="@+id/go"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/letter_guessed"
+          android:layout_alignRight="@+id/letter_guessed"
+          android:text="@string/go"
+          android:textColor="@color/black"
+          android:textSize="@dimen/data_size" />
+
+      <TextView
+          android:id="@+id/msg"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/word"
+          android:layout_below="@+id/word"
+          android:layout_marginTop="43dp"
+          android:background="@color/transparent"
+          android:text="@string/msg"
+          android:textColor="@color/black"
+          android:textSize="@dimen/data_size" />
+
+</RelativeLayout>
